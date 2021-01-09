@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="xsltfile.xsl" version="1.0"?>
-
 <!DOCTYPE catalog [
 <!ELEMENT catalog (book+)>
 <!ELEMENT book (title,author,genre,publisher,cover,price,year)>
@@ -12,13 +11,13 @@
 <!NOTATION JPG SYSTEM "image/jpeg">
 <!ELEMENT image_cover EMPTY>
 <!ATTLIST image_cover url ENTITY #REQUIRED>
-<!ENTITY fizika_na_tagata_cover SYSTEM "fizika-na-tagata.jpg" NDATA JPG>
-<!ENTITY imeto_na_rozata_cover SYSTEM "imeto-na-rozata.jpg" NDATA JPG>
-<!ENTITY cifrova_krepost_cover SYSTEM "cifrova-krepost.jpg" NDATA JPG>
-<!ENTITY hamlet_cover SYSTEM "hamlet.jpg" NDATA JPG>
-<!ENTITY tozi_pat_za_da_me_chuesh_cover SYSTEM "tozi-pat-za-da-me-chuesh.jpg" NDATA JPG>
-<!ENTITY maistora_i_margarita_cover SYSTEM "maistora-i-margarita.jpg" NDATA JPG>
-<!ENTITY do_chikago_i_nazad_cover SYSTEM "do-chikago-i-nazad.jpg" NDATA JPG>
+<!ENTITY fizika_na_tagata_cover SYSTEM "images/fizika-na-tagata.jpg" NDATA JPG>
+<!ENTITY imeto_na_rozata_cover SYSTEM "images/imeto-na-rozata.jpg" NDATA JPG>
+<!ENTITY cifrova_krepost_cover SYSTEM "images/cifrova-krepost.jpg" NDATA JPG>
+<!ENTITY hamlet_cover SYSTEM "images/hamlet.jpg" NDATA JPG>
+<!ENTITY tozi_pat_za_da_me_chuesh_cover SYSTEM "images/tozi-pat-za-da-me-chuesh.jpg" NDATA JPG>
+<!ENTITY maistora_i_margarita_cover SYSTEM "images/maistora-i-margarita.jpg" NDATA JPG>
+<!ENTITY do_chikago_i_nazad_cover SYSTEM "images/do-chikago-i-nazad.jpg" NDATA JPG>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ATTLIST publisher authorBookID IDREF #IMPLIED>
@@ -30,7 +29,6 @@
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 ]>
-
 <catalog>
     <book bookID="id_001" pages="344" language="bulgarian">
         <title>Физика на тъгата</title>
