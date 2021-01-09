@@ -26,4 +26,3 @@
 <!ELEMENT cover (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
-

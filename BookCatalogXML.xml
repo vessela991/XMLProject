@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="xsltfile.xsl" version="1.0"?>
+<!DOCTYPE catalog [
+<!ELEMENT catalog (book+)>
+<!ELEMENT book (title,author,genre,publisher,cover,price,year)>
+<!ATTLIST book
+    bookID ID #REQUIRED
+    pages CDATA #REQUIRED
+    language CDATA #REQUIRED
+>
+<!NOTATION JPG SYSTEM "image/jpeg">
+<!ELEMENT image_cover EMPTY>
+<!ATTLIST image_cover url ENTITY #REQUIRED>
+<!ENTITY fizika_na_tagata_cover SYSTEM "images/fizika-na-tagata.jpg" NDATA JPG>
+<!ENTITY imeto_na_rozata_cover SYSTEM "images/imeto-na-rozata.jpg" NDATA JPG>
+<!ENTITY cifrova_krepost_cover SYSTEM "images/cifrova-krepost.jpg" NDATA JPG>
+<!ENTITY hamlet_cover SYSTEM "images/hamlet.jpg" NDATA JPG>
+<!ENTITY tozi_pat_za_da_me_chuesh_cover SYSTEM "images/tozi-pat-za-da-me-chuesh.jpg" NDATA JPG>
+<!ENTITY maistora_i_margarita_cover SYSTEM "images/maistora-i-margarita.jpg" NDATA JPG>
+<!ENTITY do_chikago_i_nazad_cover SYSTEM "images/do-chikago-i-nazad.jpg" NDATA JPG>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST publisher authorBookID IDREF #IMPLIED>
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre genreBookID IDREF #IMPLIED>
+<!ELEMENT publisher (#PCDATA)>
+<!ATTLIST publisher publisherBookID IDREF #IMPLIED>
+<!ELEMENT cover (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+]>
+<catalog>
+    <book bookID="id_001" pages="344" language="bulgarian">
+        <title>Физика на тъгата</title>
+        <image_cover url="fizika_na_tagata_cover"/>
+        <author>Георги Господинов</author>
+        <genre>роман</genre>
+        <publisher>Жанет-45</publisher>
+        <cover>меки</cover>
+        <price>19.00лв</price>
+        <year>2019</year>
+    </book>
+    <book bookID="id_002" pages="528" language="bulgarian">
+        <title>Името на розата</title>
+        <image_cover url="imeto_na_rozata_cover"/>
+        <author>Умберто Еко</author>
+        <genre>роман</genre>
+        <publisher>Бард</publisher>
+        <cover>меки</cover>
+        <price>24.90лв</price>
+        <year>2016</year>
+    </book>
+    <book bookID="id_003" pages="396" language="bulgarian">
+        <title>Цифрова крепост</title>
+        <image_cover url="cifrova_krepost_cover" />
+        <author>Дан Браун</author>
+        <genre>роман</genre>
+        <publisher>Бард</publisher>
+        <cover>меки</cover>
+        <price>16.99лв</price>
+        <year>2018</year>
+    </book>
+    <book bookID="id_004" pages="242" language="bulgarian">
+        <title>Хамлет</title>
+        <image_cover url="hamlet_cover" />
+        <author>Уилям Шекспир</author>
+        <genre>трагедия</genre>
+        <publisher>Скорпио</publisher>
+        <cover>меки</cover>
+        <price>4.99лв</price>
+        <year>2004</year>
+    </book>
+    <book bookID="id_005" pages="72" language="bulgarian">
+        <title>Този път, за да ме чуеш</title>
+        <image_cover url="tozi_pat_za_da_me_chuesh_cover" />
+        <author>Ралица Генчева</author>
+        <genre>поезия</genre>
+        <publisher>Издателство Ралица Генчева</publisher>
+        <cover>меки</cover>
+        <price>10.00лв</price>
+        <year>2016</year>
+    </book>
+    <book bookID="id_006" pages="496" language="bulgarian">
+        <title>Майстора и Маргарита</title>
+        <image_cover url="maistora_i_margarita_cover" />
+        <author>Михаил Булгаков</author>
+        <genre>роман</genre>
+        <publisher>Дамян-Яков</publisher>
+        <cover>меки</cover>
+        <price>16.00лв</price>
+        <year>2012</year>
+    </book>
+    <book bookID="id_007" pages="120" language="bulgarian">
+        <title>До Чикаго и назад</title>
+        <image_cover url="do_chikago_i_nazad_cover" />
+        <author>Алеко Константинов</author>
+        <genre>пътепис</genre>
+        <publisher>Хеликон</publisher>
+        <cover>меки</cover>
+        <price>5.95лв</price>
+        <year>2018</year>
+    </book>
+</catalog>
