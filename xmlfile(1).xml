@@ -11,7 +11,7 @@
 >
 <!NOTATION JPG SYSTEM "image/jpeg">
 <!ELEMENT image_cover EMPTY>
-<!ATTLIST image_cover src ENTITY #REQUIRED>
+<!ATTLIST image_cover url ENTITY #REQUIRED>
 <!ENTITY fizika_na_tagata_cover SYSTEM "fizika-na-tagata.jpg" NDATA JPG>
 <!ENTITY imeto_na_rozata_cover SYSTEM "imeto-na-rozata.jpg" NDATA JPG>
 <!ENTITY cifrova_krepost_cover SYSTEM "cifrova-krepost.jpg" NDATA JPG>
@@ -34,7 +34,7 @@
 <catalog>
     <book bookID="id_001" pages="344" language="bulgarian">
         <title>Физика на тъгата</title>
-        <!-- <image_cover src="fizika_na_tagata_cover"/> -->
+        <image_cover url="fizika_na_tagata_cover"/>
         <author>Георги Господинов</author>
         <genre>роман</genre>
         <publisher>Жанет-45</publisher>
@@ -42,9 +42,9 @@
         <price>19.00лв</price>
         <year>2019</year>
     </book>
-    <!-- <book bookID="id_002" pages="528" language="bulgarian">
+    <book bookID="id_002" pages="528" language="bulgarian">
         <title>Името на розата</title>
-        <image_cover url="/imeto-na-rozata.jpg"/>
+        <image_cover url="imeto_na_rozata_cover"/>
         <author>Умберто Еко</author>
         <genre>роман</genre>
         <publisher>Бард</publisher>
@@ -101,5 +101,5 @@
         <cover>меки</cover>
         <price>5.95лв</price>
         <year>2018</year>
-    </book> -->
+    </book>
 </catalog>
