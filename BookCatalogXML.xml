@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="xsltfile.xsl" version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="BookCatalogXSLT.xsl" version="1.0"?>
 <!DOCTYPE catalog [
 <!ELEMENT catalog (book+)>
 <!ELEMENT book (title,author,genre,publisher,cover,price,year)>
