@@ -18,7 +18,7 @@
 <!ENTITY do_chikago_i_nazad_cover SYSTEM "images/do-chikago-i-nazad.jpg" NDATA JPG>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
-<!ATTLIST publisher authorBookID IDREF #IMPLIED>
+<!ATTLIST author authorBookID IDREF #IMPLIED>
 <!ELEMENT genre (#PCDATA)>
 <!ATTLIST genre genreBookID IDREF #IMPLIED>
 <!ELEMENT publisher (#PCDATA)>
