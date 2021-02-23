@@ -3,7 +3,7 @@
 <renderers>
 <renderer mime="application/pdf">
     <fonts>
-        <directory>C:\Windows\Fonts</directory>
+        <directory>C:\Windows\Fontsklkj</directory>
     </fonts>
 </renderer>
 </renderers>
